@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family:  "Roboto", sans-serif;
+}
+img{
+    width: 100%;
+    padding: 2rem 0rem;
+}
+.main{
+    .main-sec{
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     h1{
+        font-size: 3rem;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    
+    }
+    .main-p{
+        background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(253, 207, 255, 0.28) 50%, rgba(255, 189, 255, 0.082) 100%);
+        font-size: 2rem;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .card{
+            padding: 2rem;
+            h2{
+                border-top: 3px solid rgba(37, 25, 25, 0.093) ;
+                padding: 1rem 0rem;
+            }
+            p{
+                font-size: 1.1rem;
+                color: rgba(0, 0, 0, 0.607);
+                width: 90%;
+                padding: 1rem 0rem;
+            }
+        }
+    }
+    .sec{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        padding: 0rem 2rem;
+        .box{
+            p{
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 1rem 0rem;
+            color:  rgba(0, 0, 0, 0.73);
+        }
+        h2{
+            font-size:3rem;
+        }
+        .para{
+            font-weight: 400;
+            padding: 2rem 0rem;
+        }
+        .buttons{
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            padding-bottom: 7rem;
+            button{
+                width: fit-content;
+                border-radius: 5rem;
+                border:none;
+                background-color: transparent;
+                padding: 0.6rem 2rem;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+            .hover{
+                border: 1.5px solid rgb(75, 120, 255);
+                color: rgb(75, 120, 255);
+            }
+            .hover:hover{
+                color: aliceblue;
+                background-color: rgb(75, 120, 255);
+            }
+            .blue{
+                color: aliceblue;
+                background-color: rgb(75, 120, 255);
+            }
+        }
+        }
+    }
+    .yellow{
+        background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(253, 255, 207, 0.28) 50%, rgba(255, 255, 189, 0.082) 100%);
+    }
+}
+
+@media (min-width:900px){
+    .main{
+        padding: 0rem 6rem;
+        img{
+            width: 50%;
+        }
+        .main-sec{
+        flex-direction: row-reverse;
+        h1{
+            text-align: left;
+            width: 50%;
+            font-size: 4rem;
+            
+        }
+    }
+    .cards{
+        flex-direction: row;
+        img{
+            width: 100%;
+        }
+    }
+    .sec{
+        flex-direction: row;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+    }
+}
